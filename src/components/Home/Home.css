@@ -1,0 +1,20 @@
+h4{
+    text-align: center;
+}
+
+.home-area{
+    text-align: center;
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+    .home-area{
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (min-width: 992px) {
+    .home-area{
+        grid-template-columns: auto auto auto;
+    }
+}

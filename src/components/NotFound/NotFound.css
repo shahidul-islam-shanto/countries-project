@@ -1,0 +1,16 @@
+.not-found{
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: aqua;
+    margin-top: 180px;
+    margin-left: 350px;
+    
+    
+}
+.not-found h1{
+    text-align: center;
+    padding: 10px;
+    padding-top: 100px;
+
+}
