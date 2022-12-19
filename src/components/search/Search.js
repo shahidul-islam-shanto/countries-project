@@ -6,7 +6,7 @@ import './Search.css';
     const Search = (props) => {
 
     const [search, setSearch] = useState('') 
-    const [color, setColor] = useState(true)
+    const [color, setColor] = useState(false)
 
     const textSearch = (e) =>{
         setSearch(e.target.value);           
@@ -27,9 +27,10 @@ import './Search.css';
              type="text" 
              name='name' 
              placeholder='Search Country...'           
-              value={search} 
-              onChange={textSearch}
-              style={{backgroundColor: color ? "red" : "yellow"}}
+             value={search} 
+             onChange={textSearch}
+             className={`${color && "valid"}`}
+            //   style={{backgroundColor: color ? "red" : "yellow"}}
               / >
         </div>
         </>
