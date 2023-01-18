@@ -11,7 +11,7 @@ import './Search.css';
     const textSearch = (e) =>{
         setSearch(e.target.value);           
     }
-    useEffect(()=> {
+    useEffect(()=> { 
         // alert(search)
         if(search.length < 2){
             setColor(false)
@@ -19,9 +19,9 @@ import './Search.css';
             setColor(true)
         }
          props.search(search)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         },[search])
     return (
-        <>
              <div className='input-area'>
              <input 
              type="text" 
@@ -33,7 +33,6 @@ import './Search.css';
             //   style={{backgroundColor: color ? "red" : "yellow"}}
               / >
         </div>
-        </>
     );
 };
 
